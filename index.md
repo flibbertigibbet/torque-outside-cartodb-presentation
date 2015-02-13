@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Hekyll Presentation Generator
+title: Exploring Torque
 ---
 
 # Exploring Torque #
