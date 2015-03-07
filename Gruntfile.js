@@ -1,18 +1,26 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        clean: {
+            dist: {
+                dot: true,
+                src: ["!css/**", "css/*", "!*/syntax.css", "!js/**", "js/*", "!js/.gitkeep"]
+            }
+        },
         compass: {                  // Task
             dist: {                   // Target
               options: {              // Target options
-                sassDir: '_sass',
+                config: 'config.rb',
                 cssDir: 'css',
+                sassDir: '_sass',
                 environment: 'production'
               }
             },
             dev: {                    // Another target
               options: {
-                sassDir: '_sass',
-                cssDir: 'css'
+                config: 'config.rb',
+                cssDir: 'css',
+                sassDir: '_sass'
               }
             }
         },
@@ -30,8 +38,9 @@ module.exports = function(grunt) {
             }
         }
     });
+    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default', ['compass', 'uglify']);
+    grunt.registerTask('default', ['clean:dist', 'compass', 'uglify']);
 };
