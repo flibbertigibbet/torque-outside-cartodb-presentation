@@ -4,7 +4,7 @@ module.exports = function(grunt) {
         clean: {
             dist: {
                 dot: true,
-                src: ["!css/**", "css/*", "!*/syntax.css", "js/*"]
+                src: ["!css/**", "css/*", "!*/syntax.css", "js/*", "img/*"]
             }
         },
         compass: {                  // Task
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
             }
         },
         uglify: {
-            my_target: {
+            dist: {
               files: {
                 'js/impress.min.js': ['bower_components/impress.js/js/impress.js']
               }
@@ -48,4 +48,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.registerTask('default', ['clean:dist', 'compass', 'uglify', 'imagemin']);
+    grunt.registerTask('update', ['newer:compass', 'newer:uglify', 'newer:imagemin']);
 };
