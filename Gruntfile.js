@@ -4,7 +4,7 @@ module.exports = function(grunt) {
         clean: {
             dist: {
                 dot: true,
-                src: ["!css/**", "css/*", "!*/syntax.css", "!js/**", "js/*", "!js/.gitkeep"]
+                src: ["!css/**", "css/*", "!*/syntax.css", "js/*"]
             }
         },
         compass: {                  // Task
