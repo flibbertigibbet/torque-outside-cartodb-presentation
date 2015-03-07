@@ -15,13 +15,16 @@ module.exports = function(grunt) {
                 sassDir: '_sass',
                 environment: 'production'
               }
-            },
-            dev: {                    // Another target
-              options: {
-                config: 'config.rb',
-                cssDir: 'css',
-                sassDir: '_sass'
-              }
+            }
+        },
+        imagemin: {
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: '_img',
+                    src: ['*.{png,jpg,gif}'],
+                    dest: 'img'
+                }]
             }
         },
         watch: {
@@ -39,8 +42,10 @@ module.exports = function(grunt) {
         }
     });
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-newer');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default', ['clean:dist', 'compass', 'uglify']);
+    grunt.registerTask('default', ['clean:dist', 'compass', 'uglify', 'imagemin']);
 };
