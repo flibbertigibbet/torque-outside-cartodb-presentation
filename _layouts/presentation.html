@@ -3,11 +3,12 @@
 <head>
   {% include head.html %}
 </head>
-<body{% if site.simple-slideshow %} class="simple-slideshow"{% endif; %}>
-  <div id="impress" class="impress-not-supported">
+<body{% if site.simple-slideshow %} class="simple-slideshow"{% endif; %} class="impress-not-supported">
+  <div id="impress">
     {{ content }}
   </div>
-  <script type="text/javascript" src="impress.js"></script>
+  <script type="text/javascript" src="js/impress.min.js"></script>
+  <script>impress().init();</script>
 </body>
 </html>
 
