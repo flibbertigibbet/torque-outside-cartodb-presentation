@@ -1,5 +1,7 @@
-_site/
-.sass-cache/
-node_modules/
-bower_components/
+_site/*
+_img/*
+.sass-cache/*
+node_modules/*
+bower_components/*
+!*/.gitkeep
 !css/syntax.css

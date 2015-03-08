@@ -12,13 +12,10 @@ data:
 
 # So How Do I Use Torque Without the Other Stuff? #
 
-Torque only really needs the Windshaft tiler and SQL API to work.  Torque and Windshaft can be used
-without modification.
+Torque only really needs the Windshaft tiler and SQL API CartoDB projects to work.
+The Torque and Windshaft projects can be used without modification.
 
-Once the SQL API is set up to operate without user credentials from Redis or user and database names
-from the subdomain, we're ready to go!
+The SQL API will need to be set up to operate without user credentials from the CartoDB web app.
+I'll share a fork of the project I've configured to work as a stand-alone SQL API.
 
-Here's [a fork of the SQL API](https://github.com/flibbertigibbet/CartoDB-SQL-API) that has the authentication parts removed.
-
-Instead, the database user, password, and database name are configured directly in the configuration file.
-For permissions, we can rely on using a database role that has read-only access to just the tables with Torque data.
+The database is the one other component we'll need.
