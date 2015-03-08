@@ -138,6 +138,6 @@ PLATFORMS
 
 DEPENDENCIES
   compass (= 1.0.3)
-  github-pages (= 33)
+  github-pages
   json
   multi_json (= 1.7.8)
