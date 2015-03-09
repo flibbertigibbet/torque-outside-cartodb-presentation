@@ -7,9 +7,8 @@ $('document').ready(function() {
 });
 
 function flashVideoFallback(){
-  // TODO: usable embed
-  var flashplayerlocation = "/assets/jwplayer/player.swf",
-      flashplayerskin = "/assets/jwplayer/glow/glow.xml";
+  var flashplayerlocation = "/swf/jwplayer.flash.swf",
+      flashplayerskin = "/swf/six.xml";
   $('video').each(function(i, video){
     video = $(video);
     if (!Modernizr.video.h264 && swfobject.getFlashPlayerVersion() || window.location.hash.indexOf("flash-test") !== -1){
