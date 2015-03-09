@@ -7,6 +7,7 @@ $('document').ready(function() {
 });
 
 function flashVideoFallback(){
+  // TODO: usable embed
   var flashplayerlocation = "/assets/jwplayer/player.swf",
       flashplayerskin = "/assets/jwplayer/glow/glow.xml";
   $('video').each(function(i, video){
