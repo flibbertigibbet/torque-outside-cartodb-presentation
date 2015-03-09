@@ -17,6 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "impress.js": "~0.5.3"
+    "impress.js": "~0.5.3",
+    "jquery": "components/jquery#~2.1.3"
   }
 }

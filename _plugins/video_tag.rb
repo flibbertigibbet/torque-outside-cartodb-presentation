@@ -38,6 +38,7 @@ module Jekyll
       if @videos.size > 0
         # @flibbertigibbet: change preload to `none` to fix some chromes not loading mp4
         # https://github.com/flowplayer/flowplayer/issues/423
+        # preload='none'
         video =  "<video #{sizes} preload='none' controls #{poster}>"
         @videos.each do |v|
           video << "<source src='#{v}' #{types[File.extname(v)]}>"
