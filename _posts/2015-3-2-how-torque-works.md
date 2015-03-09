@@ -5,8 +5,8 @@ published: true
 classes:
  - slide
 data:
-  x: 2000
-  y: 0
+  x: 1000
+  y: 1000
 
 ---
 

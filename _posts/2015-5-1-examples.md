@@ -6,7 +6,7 @@ classes:
  - slide
 data:
   x: 1000
-  y: 2000
+  y: 3000
 
 ---
 
