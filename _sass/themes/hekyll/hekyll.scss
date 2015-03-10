@@ -90,6 +90,19 @@ h1 {
  * ;)
  */
 
+ code {
+  font-size: 95%;
+  line-height: 140%;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  background-color: #FFCCFF;
+  font-family: monospace, serif;
+  font-weight: bold;
+  font-family: Courier, 'New Courier', monospace;
+ }
+
 .slide {
     display: block;
 
@@ -121,7 +134,6 @@ h1 {
     display: block;
     font-size: 40px;
     line-height: 72px;
-
     margin-top: 100px;
   }
 
