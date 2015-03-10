@@ -14,3 +14,7 @@ overview-data:
 
 exclude: ['bower_components', 'node_modules', '_img', '_js', '_sass',
           'config.rb', 'bower.json', 'package.json', 'Gemfile', 'Gemfile.lock', 'Gruntfile.js']
+
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]

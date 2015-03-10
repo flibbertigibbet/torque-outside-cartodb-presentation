@@ -153,6 +153,10 @@ h1 {
  *
  * ;)
  */
+code {
+  font-family: monospace, serif;
+  font-family: Courier, 'New Courier', monospace; }
+
 .slide {
   display: block;
   width: 900px;
