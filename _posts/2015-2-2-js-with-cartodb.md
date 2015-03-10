@@ -21,4 +21,4 @@ CartoCSS that defines aspects of the animation.
 
 Here's an [example](http://cartodb.github.io/torque/examples/navy_leaflet) from the Torque project GitHub Pages.
 
-{% video /video/navy.mp4 430 225 /img/navy.jpg %}
+![Navy demo GIF](img/navy.gif "Navy demo time lapse")

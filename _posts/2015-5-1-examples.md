@@ -18,4 +18,4 @@ data:
 
 *  [SEPTA real-time bus locations](http://banderkat.net/septa.html)
 
-{% video /video/septa.mp4 480 300 /img/septa.jpg %}
+![SEPTA GIF](img/septa.gif "SEPTA time lapse")
