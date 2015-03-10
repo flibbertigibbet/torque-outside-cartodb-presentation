@@ -5,15 +5,12 @@ published: true
 classes:
  - slide
 data:
-  x: 1000
-  y: 1000
+  x: 3000
+  y: 2000
 
 ---
 
-# So How Do I Use Torque Without the Other Stuff? #
-
-Torque only really needs the Windshaft tiler and SQL API to work.  Torque and Windshaft can be used
-without modification.
+# Setting up the SQL API #
 
 Once the SQL API is set up to operate without user credentials from Redis or user and database names
 from the subdomain, we're ready to go!
