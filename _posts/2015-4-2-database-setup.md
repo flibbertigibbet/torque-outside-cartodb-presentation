@@ -17,7 +17,11 @@ data:
 *  There are a number of CartoDB functions in [this project](https://github.com/CartoDB/cartodb-postgresql)
    that Torque and the SQL API will expect.
 
-*  Allow local md5 connections.  Edit `pg_hba.conf` and change:
-   `local   all             all                                     peer`
+*  Allow local database connections via password authentication. Edit `pg_hba.conf` and change:
+   ```
+   local   all             all                                     peer
+   ```
    to:
-   `local   all             all                                     md5`
+   ```
+   local   all             all                                     md5
+   ```
