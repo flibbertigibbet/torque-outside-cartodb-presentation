@@ -12,5 +12,12 @@ data:
 
 # How Do I Set Up the Database? #
 
+*  PostGIS-enables Postgres database
+
 *  There are a number of CartoDB functions in [this project](https://github.com/CartoDB/cartodb-postgresql)
    that Torque and the SQL API will expect.
+
+*  Allow local md5 connections.  Edit `pg_hba.conf` and change:
+   `local   all             all                                     peer`
+   to:
+   `local   all             all                                     md5`
