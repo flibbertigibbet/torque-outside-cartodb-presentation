@@ -13,4 +13,4 @@ Here we'll explore how to use it outisde of CartoDB, with our own database.
 
 [Presentation on GitHub](https://github.com/flibbertigibbet/torque-outside-cartodb-presentation)
 
-[Full Talk on One Page](https://gist.github.com/flibbertigibbet/23a4e805a25000fc6e78)
+[Full Talk on One Page](onepage.html)

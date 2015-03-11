@@ -1,3 +1,8 @@
+---
+layout: default
+title: Exploring Torque
+---
+
 # Using Torque Outside of CartoDB #
 
 
