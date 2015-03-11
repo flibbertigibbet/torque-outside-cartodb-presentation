@@ -5,7 +5,7 @@ published: true
 classes:
  - slide
 data:
-  x: 3000
+  x: 4000
   y: 0
 
 ---
