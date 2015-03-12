@@ -326,7 +326,9 @@ To run: `node app.js` from the project top-level directory.
 
 
 
-* Some documention on Torque-specific CartoCSS is [here](https://github.com/CartoDB/torque/blob/master/doc/CartoCSS.md).  For an accumulating animation, set `-torque-data-aggregation` to `cumulative`.
+* Some documention on Torque-specific CartoCSS is [here](https://github.com/CartoDB/torque/blob/master/doc/CartoCSS.md).  For an accumulating animation, set
+
+`-torque-data-aggregation` to `cumulative`.
 
 (By default, previous values are discarded.)
 
